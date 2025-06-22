@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Nom - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Votre Nom</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#a-propos">À Propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bonjour, je suis <span>Votre Nom</span></h1>
+                <h2>Développeur Web</h2>
+                <p>Je crée des expériences web élégantes et fonctionnelles.</p>
+                <div class="cta-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <!-- Remplacez par votre photo -->
+                    <img src="images/profile-picture.jpg" alt="Votre Nom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>À Propos de Moi</h2>
+                <p>En savoir plus sur mon parcours et mes motivations</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>votre.email@example.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 6 12 34 56 78</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Votre Ville, France</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="documents/CV.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Télécharger CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mes Compétences</h2>
+                <p>Technologies et outils que j'utilise</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Développement Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks & Librairies</h3>
+                    <div class="skill-items">
+                        <!-- Ajoutez vos frameworks et librairies ici -->
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Outils</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expérience Professionnelle</h2>
+                <p>Mon parcours professionnel</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Développeur Web</h3>
+                        <span class="timeline-date">2023 - Présent</span>
+                        <h4>Entreprise ABC</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Développeur Front-End</h3>
+                        <span class="timeline-date">2020 - 2023</span>
+                        <h4>Entreprise XYZ</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres expériences professionnelles ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mes Projets</h2>
+                <p>Découvrez mes réalisations récentes</p>
+            </div>
+            <div class="projects-filter">
+                <ul>
+                    <li data-filter="all" class="active">Tous</li>
+                    <li data-filter="web">Web</li>
+                    <li data-filter="app">Applications</li>
+                    <li data-filter="design">Design</li>
+                </ul>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item" data-category="web">
+                    <div class="project-image">
+                        <img src="images/projects/project-1.jpg" alt="Projet 1">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Projet 1</h3>
+                                <p>Développement Web</p>
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="app">
+                    <div class="project-image">
+                        <img src="images/projects/project-2.jpg" alt="Projet 2">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Projet 2</h3>
+                                <p>Application Mobile</p>
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres projets ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <p>Mes formations et certifications</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Certification Web Developer</h3>
+                        <p>Délivré par Organisme XYZ - 2023</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Certification JavaScript Avancé</h3>
+                        <p>Délivré par Organisme ABC - 2022</p>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres certifications ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Prenez contact avec moi</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>votre.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 6 12 34 56 78</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localisation</h3>
+                            <p>Votre Ville, France</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre Nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Objet">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Votre Nom. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
