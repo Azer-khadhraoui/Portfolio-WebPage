@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALDAWRY Football - Détails du projet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details {
+            padding: 100px 0;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+     .project-video video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: #000;
+    max-height: 500px;
+}
+        .features-list {
+            margin: 30px 0;
+        }
+        
+        .features-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .features-list li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mohamed Azer Khadhraoui</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>ALDAWRY Football</h2>
+                <p>Application de gestion de compétitions de football</p>
+            </div>
+            
+            <div class="project-description">
+                <p>ALDAWRY Football est une application de bureau développée en C++ avec Qt Framework qui permet de gérer des compétitions de football, des équipes, des joueurs et des calendriers de matchs.</p>
+                
+                <h3>Fonctionnalités principales</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> Gestion des équipes et des joueurs</li>
+                    <li><i class="fas fa-check-circle"></i> Planification automatique des matchs</li>
+                    <li><i class="fas fa-check-circle"></i> Statistiques en temps réel</li>
+                    <li><i class="fas fa-check-circle"></i> Interface utilisateur moderne et intuitive</li>
+                    <li><i class="fas fa-check-circle"></i> Base de données intégrée pour le stockage des données</li>
+                </ul>
+                
+                <h3>Technologies utilisées</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-code"></i> C++</li>
+                    <li><i class="fas fa-desktop"></i> Qt Framework</li>
+                    <li><i class="fas fa-database"></i> SQLite</li>
+                </ul>
+            </div>
+            
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="../images/projects/aldawry1.png" alt="Interface d'accueil">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/projects/aldawry2.png" alt="Gestion des équipes">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/projects/aldawry3.png" alt="Calendrier des matchs">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/projects/aldawry4.png" alt="Statistiques">
+                </div>
+            </div>
+            
+            <div class="project-video">
+                <h3>Démonstration vidéo</h3>
+                <video controls poster="../images/projects/aldawry-thumbnail.jpg">
+                    <source src="../videos/aldawry-demo.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
+            </div>
+            
+            <a href="../index.html#projects" class="btn btn-primary back-btn">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

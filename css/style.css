@@ -502,8 +502,16 @@ nav ul li a.active::after {
     margin-bottom: 15px;
 }
 
-.project-link,
-.project-github {
+/* Styles pour les boutons de projet */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project-github,
+.project-view-more {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -511,24 +519,27 @@ nav ul li a.active::after {
     height: 40px;
     background-color: white;
     border-radius: 50%;
-    margin: 0 5px;
     transition: all 0.3s ease;
 }
 
-.project-link:hover {
-    background-color: var(--dark-color);
-    color: #fff;
-}
-
-.project-github:hover {
+.project-github:hover,
+.project-view-more:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.custom-icon {
+.project-github img.custom-icon {
     width: 24px;
     height: 24px;
-    object-fit: contain;
+}
+
+.project-view-more i {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.project-view-more:hover i {
+    color: var(--secondary-color);
 }
 
 /* Certifications Section */
