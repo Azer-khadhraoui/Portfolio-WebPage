@@ -365,7 +365,7 @@
                 <p>Prenez contact avec moi</p>
             </div>
             <div class="contact-content">
-                <div>
+                <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
@@ -388,23 +388,52 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/azer-khadhraoui" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Azer-khadhraoui" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/azer.khadhraoui.859622/" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://linkedin.com/in/azer-khadhraoui" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Azer-khadhraoui" class="social-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/azer.khadhraoui.859622/" class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- Formulaire avec FormSubmit -->
-                <form action="https://formsubmit.co/azerronaldo2004@gmail.com" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Votre Nom" required>
+
+                <form class="contact-form" action="https://formsubmit.co/azerronaldo2004@gmail.com" method="POST">
+                    <!-- Anti-spam honeypot -->
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- Désactiver les captchas -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Sujet de l'email -->
+                    <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio!">
+                    <!-- Redirection après soumission -->
+                    <input type="hidden" name="_next" value="https://azer-khadhraoui.github.io/thankyou.html">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Votre Email" required>
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea name="message" placeholder="Votre Message" required></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message..." required rows="6"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Envoyer Message</button>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i> Envoyer Message
+                    </button>
                 </form>
             </div>
         </div>
