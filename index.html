@@ -6,7 +6,7 @@
     <title>Mohamed Azer Khadhraoui - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -365,18 +365,19 @@
                     <div class="social-links">
                         <a href="https://linkedin.com/in/azer-khadhraoui" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/Azer-khadhraoui" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://facebook.com/azer khadhraoui" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/azer.khadhraoui.859622/" class="social-link"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <!-- Formulaire avec FormSubmit -->
+                <form action="https://formsubmit.co/azerronaldo2004@gmail.com" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Votre Nom" required>
+                        <input type="text" name="name" placeholder="Votre Nom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Votre Email" required>
+                        <input type="email" name="email" placeholder="Votre Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Votre Message" required></textarea>
+                        <textarea name="message" placeholder="Votre Message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Envoyer Message</button>
                 </form>
