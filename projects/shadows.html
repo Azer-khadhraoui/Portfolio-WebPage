@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows of Liberty - Détails du projet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Ajout d'un padding pour éviter que le contenu soit caché par la bannière */
+        main.container {
+            padding-top: 40px;
+        }
+        
+        .project-details {
+            padding: 100px 0;
+        }
+        
+        /* Styles pour la première section avec plus d'espace */
+        main.container > section:first-child {
+            margin-top: 80px;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .project-video video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            background-color: #000;
+            max-height: 500px;
+        }
+        
+        .features-list {
+            margin: 30px 0;
+        }
+        
+        .features-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .features-list li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+        }
+        
+        /* Ajout de styles pour harmoniser avec aldawry.html */
+        header {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .section-header h2 {
+            color: var(--primary-color);
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary-color);
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mohamed Azer Khadhraoui</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="section-header">
+                <h2>Shadows of Liberty</h2>
+                <p>Jeu d'aventure 2D développé avec C++ et Qt</p>
+            </div>
+            
+            <p><strong>Shadows of Liberty</strong> est un jeu d'aventure 2D captivant qui combine exploration, résolution d'énigmes et combats dans un univers immersif. Développé en tant que projet étudiant, ce jeu offre une expérience de jeu fluide avec une direction artistique soignée.</p>
+
+            <h3>Fonctionnalités principales</h3>
+            <ul>
+                <li><strong>Gameplay dynamique</strong> - Mélange d'exploration, de puzzle et d'action</li>
+                <li><strong>Niveaux variés</strong> - Environnements détaillés avec des thématiques distinctes</li>
+                <li><strong>Progression du joueur</strong> - Système de déblocage de nouvelles capacités</li>
+                <li><strong>Interface intuitive</strong> - Navigation simple et affichage optimisé</li>
+                <li><strong>Système de sauvegarde</strong> - Conservation de la progression</li>
+            </ul>
+
+            <h3>Technologies utilisées</h3>
+            <ul>
+                <li>C++</li>
+                <li>Qt Framework</li>
+                <li>Gestion des assets personnalisée</li>
+                <li>Git pour le contrôle de version</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Galerie</h3>
+            <div class="gallery">
+                <img src="../images/sdh.jfif" alt="Capture d'écran principale de Shadows of Liberty">
+                <img src="../images/mmmm.png" alt="Environnement de jeu Shadows of Liberty">
+                <img src="../images/gggg.png" alt="Personnage Shadows of Liberty">
+            </div>
+        </section>
+
+        <section>
+            <h3>Ce que j'ai appris</h3>
+            <ul>
+                <li>Programmation orientée objet avancée en C++</li>
+                <li>Conception de systèmes de jeu (collision, IA, physique)</li>
+                <li>Gestion de projet complexe avec plusieurs composants</li>
+                <li>Optimisation des performances pour une expérience fluide</li>
+                <li>Équilibrage de la difficulté pour une expérience de jeu satisfaisante</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://github.com/Azer-khadhraoui/Shadows-Of-Liberty" class="btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> Voir le code source
+                </a>
+            </div>
+        </section>
+
+        <section style="text-align: center;">
+            <a href="../index.html" class="btn-primary">
+                <i class="fas fa-arrow-left"></i> Retour au portfolio
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
