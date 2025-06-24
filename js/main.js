@@ -130,4 +130,35 @@ document.addEventListener('DOMContentLoaded', function() {
             showMoreButton.style.display = 'none';
         });
     }
+    
+    // Système pour afficher les images des certificats
+    // Gestion des boutons de visualisation des certificats
+    const viewCertButtons = document.querySelectorAll('.btn-view-cert');
+    const certModal = document.getElementById('certModal');
+    const certImage = document.getElementById('certImage');
+    const closeBtn = document.querySelector('.cert-modal .close-btn');
+    
+    // Ouvrir la modal avec l'image du certificat
+    viewCertButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const certPath = this.getAttribute('data-cert');
+            certImage.src = certPath;
+            certModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Empêche le défilement
+        });
+    });
+    
+    // Fermer la modal
+    closeBtn.addEventListener('click', function() {
+        certModal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Réactive le défilement
+    });
+    
+    // Fermer la modal si on clique en dehors de l'image
+    certModal.addEventListener('click', function(e) {
+        if (e.target === certModal) {
+            certModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
 });
