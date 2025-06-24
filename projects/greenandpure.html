@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green and Pure - Détails du projet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Ajout d'un padding pour éviter que le contenu soit caché par la bannière */
+        main.container {
+            padding-top: 40px;
+        }
+        
+        .project-details {
+            padding: 100px 0;
+        }
+        
+        /* Styles pour la première section avec plus d'espace */
+        main.container > section:first-child {
+            margin-top: 80px;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .project-video video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            background-color: #000;
+            max-height: 500px;
+        }
+        
+        .features-list {
+            margin: 30px 0;
+        }
+        
+        .features-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .features-list li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+        }
+        
+        /* Ajout de styles pour harmoniser avec aldawry.html */
+        header {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        .section-header h2 {
+            color: black;
+        }
+        
+        h3 {
+            color: black;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary-color);
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour les icônes Font Awesome en bleu */
+        .fas, .fab {
+            color: var(--primary-color); /* Utilise la couleur primaire de votre thème */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mohamed Azer Khadhraoui</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="section-header">
+                <h2>Green and Pure</h2>
+                <p>Site e-commerce agricole développé avec PHP et MySQL</p>
+            </div>
+            
+            <p><strong>Green and Pure</strong> est une plateforme e-commerce dédiée aux produits agricoles biologiques. Ce site permet aux agriculteurs de vendre directement leurs produits aux consommateurs, sans intermédiaires, tout en garantissant la qualité et la traçabilité des produits.</p>
+
+            <h3>Fonctionnalités principales</h3>
+            <ul class="features-list">
+                <li><i class="fas fa-check-circle"></i> <strong>Catalogue de produits</strong> - Système de filtrage et recherche avancée</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Espace vendeur</strong> - Interface pour les agriculteurs</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Système de paiement</strong> - Intégration sécurisée de passerelles de paiement</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Suivi de commandes</strong> - Interface intuitive pour suivre les livraisons</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Système de notation</strong> - Évaluations et avis des produits</li>
+            </ul>
+
+            <h3>Technologies utilisées</h3>
+            <ul>
+                <li><i class="fab fa-php"></i> PHP</li>
+                <li><i class="fas fa-database"></i> MySQL</li>
+                <li><i class="fab fa-html5"></i> HTML5 / CSS3</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Galerie</h3>
+            <div class="gallery">
+                <img src="../images/green1.jpg" alt="Page d'accueil Green and Pure">
+                <img src="../images/green2.jpg" alt="Catalogue de produits">
+                <img src="../images/green3.jpg" alt="Interface vendeur">
+            </div>
+        </section>
+
+        <section>
+            <h3>Ce que j'ai appris</h3>
+            <ul class="features-list">
+                <li><i class="fas fa-server"></i> Développement backend avec PHP/MySQL</li>
+                <li><i class="fas fa-shopping-cart"></i> Conception de systèmes e-commerce</li>
+                <li><i class="fas fa-lock"></i> Sécurisation des données sensibles</li>
+                <li><i class="fas fa-mobile-alt"></i> Design responsive pour une expérience optimale sur tous supports</li>
+                <li><i class="fas fa-users"></i> UX design centré sur l'utilisateur</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 2rem; margin-bottom: 3rem;">
+                <a href="https://github.com/Azer-khadhraoui/projet-web2A" class="btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> Voir le code source
+                </a>
+            </div>
+        </section>
+
+        <section style="text-align: center; margin-top: 2rem;">
+            <a href="../index.html" class="btn-primary">
+                <i class="fas fa-arrow-left"></i> Retour au portfolio
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
