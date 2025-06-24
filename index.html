@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("hkscIew7LQfOmNbDW");
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -22,7 +28,6 @@
                     <li><a href="#experience">Expérience</a></li>
                     <li><a href="#projects">Projets</a></li>
                     <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="hamburger">
@@ -438,91 +443,21 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact</h2>
-                <p>Prenez contact avec moi</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>mohamedazer.khadhraoui@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Téléphone</h3>
-                            <p>+216 20828504</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Localisation</h3>
-                            <p>Ariana/Kairouan, Tunisie</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/azer-khadhraoui" class="social-link" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Azer-khadhraoui" class="social-link" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/azer.khadhraoui.859622/" class="social-link" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <form class="contact-form" action="https://formsubmit.co/azerronaldo2004@gmail.com" method="POST">
-                    <!-- Anti-spam honeypot -->
-                    <input type="text" name="_honey" style="display:none">
-                    <!-- Désactiver les captchas -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- Sujet de l'email -->
-                    <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio!">
-                    <!-- Redirection après soumission -->
-                    <input type="hidden" name="_next" value="https://azer-khadhraoui.github.io/thankyou.html">
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Adresse email</label>
-                            <input type="email" id="email" name="email" placeholder="Votre email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Votre message..." required rows="6"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary submit-btn">
-                        <i class="fas fa-paper-plane"></i> Envoyer Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="container">
             <div class="footer-content">
                 <p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Azer-khadhraoui" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/azer.khadhraoui.859622/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
                 <div class="footer-links">
                     <a href="#">Mentions légales</a>
                     <a href="#">Politique de confidentialité</a>

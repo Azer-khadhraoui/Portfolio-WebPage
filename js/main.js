@@ -161,4 +161,10 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = 'auto';
         }
     });
+    
+    // S'il existe un code comme ceci, vérifiez sa logique
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        // Validation qui pourrait bloquer l'envoi
+        // ...
+    });
 });
