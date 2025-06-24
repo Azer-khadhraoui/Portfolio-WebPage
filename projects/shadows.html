@@ -75,16 +75,16 @@
         
         /* Ajout de styles pour harmoniser avec aldawry.html */
         header {
-            background: var(--primary-color);
-            color: white;
+            background: white;
+            color: var(--primary-color);
         }
         
         .section-header h2 {
-            color: var(--primary-color);
+            color: black;
         }
         
         h3 {
-            color: var(--primary-color);
+            color: black;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 10px;
         }
@@ -92,7 +92,7 @@
         .btn-primary {
             background: var(--primary-color);
             color: white;
-            padding: 10px 20px;
+            padding: 10px 30px;
             border-radius: 5px;
             text-decoration: none;
             display: inline-block;
@@ -128,6 +128,11 @@
         .gallery img:hover {
             transform: scale(1.05);
         }
+        /* Style pour les icônes Font Awesome en bleu */
+.fas, .fab {
+    color: var(--primary-color); /* Utilise la couleur primaire de votre thème */
+    margin-right: 10px;
+}
     </style>
 </head>
 <body>
@@ -141,27 +146,27 @@
         <section>
             <div class="section-header">
                 <h2>Shadows of Liberty</h2>
-                <p>Jeu d'aventure 2D développé avec C++ et Qt</p>
+                <p>Jeu d'aventure 2D développé avec C avec SDL 1.2</p>
             </div>
             
             <p><strong>Shadows of Liberty</strong> est un jeu d'aventure 2D captivant qui combine exploration, résolution d'énigmes et combats dans un univers immersif. Développé en tant que projet étudiant, ce jeu offre une expérience de jeu fluide avec une direction artistique soignée.</p>
 
-            <h3>Fonctionnalités principales</h3>
-            <ul>
-                <li><strong>Gameplay dynamique</strong> - Mélange d'exploration, de puzzle et d'action</li>
-                <li><strong>Niveaux variés</strong> - Environnements détaillés avec des thématiques distinctes</li>
-                <li><strong>Progression du joueur</strong> - Système de déblocage de nouvelles capacités</li>
-                <li><strong>Interface intuitive</strong> - Navigation simple et affichage optimisé</li>
-                <li><strong>Système de sauvegarde</strong> - Conservation de la progression</li>
-            </ul>
+     <h3>Fonctionnalités principales</h3>
+<ul class="features-list">
+    <li><i class="fas fa-check-circle"></i> <strong>Gameplay dynamique</strong> - Mélange d'exploration, de puzzle et d'action</li>
+    <li><i class="fas fa-check-circle"></i> <strong>Niveaux variés</strong> - Environnements détaillés avec des thématiques distinctes</li>
+    <li><i class="fas fa-check-circle"></i> <strong>Progression du joueur</strong> - Système de déblocage de nouvelles capacités</li>
+    <li><i class="fas fa-check-circle"></i> <strong>Interface intuitive</strong> - Navigation simple et affichage optimisé</li>
+    <li><i class="fas fa-check-circle"></i> <strong>Système de sauvegarde</strong> - Conservation de la progression</li>
+</ul>
 
-            <h3>Technologies utilisées</h3>
-            <ul>
-                <li>C++</li>
-                <li>Qt Framework</li>
-                <li>Gestion des assets personnalisée</li>
-                <li>Git pour le contrôle de version</li>
-            </ul>
+        <h3>Technologies utilisées</h3>
+<ul>
+    <li><i class="fas fa-code"></i> C</li>
+    <li><i class="fas fa-desktop"></i> SDL 1.2</li>
+    <li><i class="fas fa-file-code"></i> Gestion des assets personnalisée</li>
+    <li><i class="fab fa-git-alt"></i> Git pour le contrôle de version</li>
+</ul>
         </section>
 
         <section>
@@ -174,27 +179,27 @@
         </section>
 
         <section>
-            <h3>Ce que j'ai appris</h3>
-            <ul>
-                <li>Programmation orientée objet avancée en C++</li>
-                <li>Conception de systèmes de jeu (collision, IA, physique)</li>
-                <li>Gestion de projet complexe avec plusieurs composants</li>
-                <li>Optimisation des performances pour une expérience fluide</li>
-                <li>Équilibrage de la difficulté pour une expérience de jeu satisfaisante</li>
-            </ul>
+  <h3>Ce que j'ai appris</h3>
+<ul class="features-list">
+    <li><i class="fas fa-brain"></i> Programmation orientée objet avancée en C++</li>
+    <li><i class="fas fa-gamepad"></i> Conception de systèmes de jeu (collision, IA, physique)</li>
+    <li><i class="fas fa-tasks"></i> Gestion de projet complexe avec plusieurs composants</li>
+    <li><i class="fas fa-tachometer-alt"></i> Optimisation des performances pour une expérience fluide</li>
+    <li><i class="fas fa-balance-scale"></i> Équilibrage de la difficulté pour une expérience de jeu satisfaisante</li>
+</ul>
             
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://github.com/Azer-khadhraoui/Shadows-Of-Liberty" class="btn-primary" target="_blank">
-                    <i class="fab fa-github"></i> Voir le code source
-                </a>
-            </div>
-        </section>
+  <div style="text-align: center; margin-top: 2rem; margin-bottom: 3rem;">
+    <a href="https://github.com/Azer-khadhraoui/Shadows-Of-Liberty" class="btn-primary" target="_blank">
+        <i class="fab fa-github"></i> Voir le code source
+    </a>
+</div>
+</section>
 
-        <section style="text-align: center;">
-            <a href="../index.html" class="btn-primary">
-                <i class="fas fa-arrow-left"></i> Retour au portfolio
-            </a>
-        </section>
+<section style="text-align: center; margin-top: 2rem;">
+    <a href="../index.html" class="btn-primary">
+        <i class="fas fa-arrow-left"></i> Retour au portfolio
+    </a>
+</section>
     </main>
 
     <footer>
