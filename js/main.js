@@ -112,4 +112,22 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
+    
+    // Gestion du bouton "Voir plus" pour les certifications
+    const showMoreButton = document.getElementById('show-more-certs');
+    
+    if (showMoreButton) {
+        showMoreButton.addEventListener('click', function() {
+            const hiddenCerts = document.querySelectorAll('.hidden-cert');
+            
+            // Affiche toutes les certifications cachées
+            hiddenCerts.forEach(cert => {
+                cert.classList.remove('hidden-cert');
+                cert.classList.add('show');
+            });
+            
+            // Cache le bouton après avoir affiché toutes les certifications
+            showMoreButton.style.display = 'none';
+        });
+    }
 });

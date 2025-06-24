@@ -583,6 +583,27 @@ nav ul li a.active::after {
     font-size: 14px;
 }
 
+/* Style pour les certifications cachées */
+.hidden-cert {
+    display: none;
+}
+
+/* Animation pour les certifications qui apparaissent */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.certification-item.show {
+    display: block;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Style pour le bouton centré */
+.text-center {
+    text-align: center;
+}
+
 /* Contact Section */
 .contact {
     padding: 100px 0;
