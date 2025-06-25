@@ -975,3 +975,74 @@ footer {
         display: block;
     }
 }
+
+/* Style du sélecteur de langue */
+.language-selector {
+    position: relative;
+    margin-left: 20px;
+}
+
+.current-lang {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.current-lang i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 5px 0;
+    min-width: 120px;
+    display: none;
+    z-index: 100;
+}
+
+.language-selector:hover .language-dropdown {
+    display: block;
+}
+
+.language-selector:hover .current-lang i {
+    transform: rotate(180deg);
+}
+
+.language-dropdown a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background 0.3s;
+}
+
+.language-dropdown a:hover {
+    background: #f5f5f5;
+}
+
+.language-dropdown a.active {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Ajout de support RTL pour l'arabe */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .language-dropdown {
+    right: auto;
+    left: 0;
+}

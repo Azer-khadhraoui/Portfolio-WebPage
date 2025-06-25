@@ -167,4 +167,80 @@ document.addEventListener('DOMContentLoaded', function() {
         // Validation qui pourrait bloquer l'envoi
         // ...
     });
+    
+    // Gestion du changement de langue
+    document.addEventListener('DOMContentLoaded', function() {
+        // Langue par défaut
+        let currentLang = 'fr';
+        
+        // Charger les traductions pour la langue actuelle
+        function loadTranslations(lang) {
+            // Supprimer l'ancien script de traduction s'il existe
+            const oldScript = document.getElementById('lang-script');
+            if (oldScript) {
+                oldScript.remove();
+            }
+            
+            // Créer et ajouter le nouveau script
+            const script = document.createElement('script');
+            script.id = 'lang-script';
+            script.src = `js/lang/${lang}.js`;
+            script.onload = function() {
+                updatePageContent();
+                
+                // Mettre à jour le sélecteur de langue
+                document.querySelector('.current-lang').innerHTML = lang.toUpperCase() + ' <i class="fas fa-chevron-down"></i>';
+                
+                // Mettre à jour la classe active dans le menu déroulant
+                document.querySelectorAll('.language-dropdown a').forEach(a => {
+                    a.classList.remove('active');
+                });
+                document.querySelector(`.language-dropdown a[data-lang="${lang}"]`).classList.add('active');
+                
+                // Définir la direction du texte pour l'arabe
+                if (lang === 'ar') {
+                    document.body.setAttribute('dir', 'rtl');
+                    // Ajouter une classe pour les ajustements CSS spécifiques à RTL
+                    document.body.classList.add('rtl');
+                } else {
+                    document.body.setAttribute('dir', 'ltr');
+                    document.body.classList.remove('rtl');
+                }
+            };
+            document.head.appendChild(script);
+        }
+        
+        // Mettre à jour le contenu de la page avec les traductions
+        function updatePageContent() {
+            // Remplacer tous les textes ayant des attributs data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[key]) {
+                    element.innerHTML = translations[key];
+                }
+            });
+        }
+        
+        // Événements pour les liens de langue
+        document.querySelectorAll('.language-dropdown a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const lang = this.getAttribute('data-lang');
+                if (lang !== currentLang) {
+                    currentLang = lang;
+                    localStorage.setItem('preferredLanguage', lang);
+                    loadTranslations(lang);
+                }
+            });
+        });
+        
+        // Charger la langue préférée de l'utilisateur si disponible
+        const savedLang = localStorage.getItem('preferredLanguage');
+        if (savedLang) {
+            currentLang = savedLang;
+        }
+        
+        // Charger les traductions initiales
+        loadTranslations(currentLang);
+    });
 });

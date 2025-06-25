@@ -22,7 +22,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home" class="active">Accueil</a></li>
+                    <li><a href="#home" class="active" data-i18n="nav_home">Accueil</a></li>
                     <li><a href="#about">À Propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#experience">Expérience</a></li>
@@ -30,6 +30,14 @@
                     <li><a href="#certifications">Certifications</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="current-lang">FR <i class="fas fa-chevron-down"></i></button>
+                <div class="language-dropdown">
+                    <a href="#" data-lang="fr" class="active">Français</a>
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="ar">العربية</a>
+                </div>
+            </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -58,8 +66,8 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>À Propos de Moi</h2>
-                <p>En savoir plus sur mon parcours et mes motivations</p>
+                <h2 data-i18n="about_title">À Propos de Moi</h2>
+                <p data-i18n="about_p1">Je suis un étudiant en deuxième année d'ingénierie informatique à l'ESPRIT, passionné par l'innovation et les nouvelles technologies. J'ai excellé dans mes études avec une moyenne de 17.26 en 2023-2024 et je m'épanouis dans des environnements collaboratifs. Mon objectif est de résoudre des problèmes complexes en développant des solutions robustes avec passion et précision.</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
