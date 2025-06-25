@@ -167,6 +167,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gestion du changement de langue
     // Fonction pour charger les traductions
     function loadTranslations(lang) {
+        // Nettoyer l'objet de traduction existant
+        window.translations = {};
+        
         // Supprime le script précédent s'il existe
         const existingScript = document.getElementById('lang-script');
         if (existingScript) {
@@ -178,8 +181,17 @@ document.addEventListener('DOMContentLoaded', function() {
         script.id = 'lang-script';
         script.src = `js/lang/${lang}.js`;
         script.onload = function() {
-            // Une fois le script chargé, les traductions sont disponibles dans window.translations
+            // Vérifier que les traductions sont chargées
+            if (!window.translations) {
+                console.error(`Le fichier de traduction '${lang}.js' n'a pas défini window.translations correctement`);
+                return;
+            }
+            
             updatePageContent();
+            console.log(`Traduction chargée: ${lang}`, window.translations);
+        };
+        script.onerror = function() {
+            console.error(`Erreur lors du chargement du fichier de traduction '${lang}.js'`);
         };
         document.head.appendChild(script);
     }
@@ -189,7 +201,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (window.translations && window.translations[key]) {
-                element.innerHTML = window.translations[key];
+                // Pour éviter les problèmes avec le HTML dans les traductions
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.placeholder = window.translations[key];
+                } else {
+                    element.innerHTML = window.translations[key];
+                }
+            }
+        });
+        
+        // Debug: vérifier les éléments non traduits
+        console.log("Éléments qui n'ont pas été traduits:");
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (!window.translations || !window.translations[key]) {
+                console.log(`Clé manquante: ${key} pour l'élément:`, element);
             }
         });
     }

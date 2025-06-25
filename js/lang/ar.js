@@ -8,7 +8,7 @@ window.translations = {
     "nav_certifications": "الشهادات",
     
     // Hero Section
-    "hero_greeting": "مرحبًا، أنا <span>محمد الأزهر خضراوي</span>",
+    "hero_greeting": "مرحبًا، أنا <span>محمد آزر خضراوي</span>",
     "hero_title": "طالب هندسة كمبيوتر",
     "hero_description": "شغوف بالابتكار والتقنيات الجديدة، أقوم بإنشاء حلول قوية وحديثة مع خبرة في ++C و JavaScript و PowerApps.",
     "hero_projects": "مشاهدة مشاريعي",
@@ -31,6 +31,12 @@ window.translations = {
     // Experience Section
     "exp_title": "الخبرة المهنية",
     "exp_subtitle": "مسيرتي المهنية",
+    "exp_bank_title": "متدرب مصرفي",
+    "exp_bank_company": "البنك العربي التونسي (ATB)، القيروان",
+    "exp_bank_desc": "ساعدت في عمليات خدمة العملاء، بما في ذلك استقبال وتوجيه العملاء. دعمت مهام إدارة الحسابات وتعلمت إجراءات البنك اليومية. راقبت سير العمل عبر الأقسام، بما في ذلك القروض وخدمة العملاء.",
+    "exp_dev_title": "متدرب مطور PowerApps",
+    "exp_dev_company": "Agile 4UX (تدريب عن بعد)",
+    "exp_dev_desc": "شاركت في تطوير تطبيق لإدارة الوقود لشركة \"Universal\" باستخدام Microsoft PowerApps. ساهمت في إنشاء واجهات المستخدم، وتنفيذ المنطق، والاتصال بقاعدة البيانات (Microsoft Lists). اكتسبت خبرة عملية في تطوير التعليمات البرمجية المنخفضة والمنهجيات الرشيقة التعاونية.",
     
     // Projects Section
     "projects_title": "مشاريعي",
@@ -46,7 +52,7 @@ window.translations = {
     "cert_more": "مشاهدة المزيد من الشهادات",
     
     // Footer
-    "footer_rights": "© 2025 محمد الأزهر خضراوي. جميع الحقوق محفوظة.",
+    "footer_rights": "© 2025 محمد آزر خضراوي. جميع الحقوق محفوظة.",
     "footer_legal": "البنود القانونية",
     "footer_privacy": "سياسة الخصوصية"
 };

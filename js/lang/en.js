@@ -31,6 +31,12 @@ window.translations = {
     // Experience Section
     "exp_title": "Professional Experience",
     "exp_subtitle": "My professional journey",
+    "exp_bank_title": "Banking Intern",
+    "exp_bank_company": "Arab Tunisian Bank (ATB), Kairouan",
+    "exp_bank_desc": "Assisted in customer service operations, including greeting and directing clients. Supported account management tasks and learned daily banking procedures. Observed workflow across departments, including loans and customer service.",
+    "exp_dev_title": "PowerApps Developer Intern",
+    "exp_dev_company": "Agile 4UX (Remote Internship)",
+    "exp_dev_desc": "Participated in developing a fuel management application for the company \"Universal\" using Microsoft PowerApps. Contributed to creating user interfaces, implementing logic, and connecting to a database (Microsoft Lists). Gained practical experience in low-code development and collaborative agile methodologies.",
     
     // Projects Section
     "projects_title": "My Projects",

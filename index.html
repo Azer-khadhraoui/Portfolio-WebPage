@@ -24,10 +24,10 @@
                 <ul>
                     <li><a href="#home" class="active" data-i18n="nav_home">Accueil</a></li>
                     <li><a href="#about" data-i18n="nav_about">À Propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+                    <li><a href="#experience" data-i18n="nav_experience">Expérience</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+                    <li><a href="#certifications" data-i18n="nav_certifications">Certifications</a></li>
                 </ul>
             </nav>
             <div class="language-selector">
@@ -49,7 +49,7 @@
             <div class="hero-content">
                 <h1 data-i18n="hero_greeting">Bonjour, je suis <span>Mohamed Azer Khadhraoui</span></h1>
                 <h2>Étudiant en Ingénierie Informatique</h2>
-                <p>Passionné par l'innovation et les nouvelles technologies, je crée des solutions robustes et modernes avec une expertise en C++, JavaScript, et PowerApps.</p>
+                <p data-i18n="hero_description">Passionné par l'innovation et les nouvelles technologies, je crée des solutions robustes et modernes avec une expertise en C++, JavaScript, et PowerApps.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary" data-i18n="hero_projects">Voir mes projets</a>
                     <a href="#contact" class="btn btn-secondary" data-i18n="hero_contact">Me contacter</a>
@@ -68,6 +68,8 @@
             <div class="section-header">
                 <h2 data-i18n="about_title">À Propos de Moi</h2>
                 <p data-i18n="about_p1">Je suis un étudiant en deuxième année d'ingénierie informatique à l'ESPRIT, passionné par l'innovation et les nouvelles technologies. J'ai excellé dans mes études avec une moyenne de 17.26 en 2023-2024 et je m'épanouis dans des environnements collaboratifs. Mon objectif est de résoudre des problèmes complexes en développant des solutions robustes avec passion et précision.</p>
+
+<p data-i18n="about_p2">J'ai une expérience pratique dans le développement web et logiciel, avec des projets variés allant des applications de gestion de football aux plateformes éducatives interactives. Mes compétences incluent C++, JavaScript, HTML, CSS, PHP, et PowerApps, avec une forte orientation vers la création d'interfaces utilisateur modernes et intuitives.</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -165,7 +167,7 @@
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
-                <h2>Expérience Professionnelle</h2>
+                <h2 data-i18n="exp_title">Expérience Professionnelle</h2>
                 <p>Mon parcours professionnel</p>
             </div>
             <div class="experience-timeline">
@@ -176,9 +178,10 @@
                                 <img src="images/atb.png" alt="Nom de l'entreprise">
                             </div>
                         <div class="timeline-date">Juillet 2024</div>
-                        <h3>Stagiaire Bancaire</h3>
-                        <h4>Arab Tunisian Bank (ATB), Kairouan</h4>
-                        <p>Aidé dans les opérations de service client, y compris l'accueil et l'orientation des clients. Soutenu les tâches de gestion de comptes et appris les procédures bancaires quotidiennes. Observé le flux de travail des départements, y compris les prêts et le service client.</p>
+                        <!-- Expérience bancaire -->
+<h3 data-i18n="exp_bank_title">Stagiaire Bancaire</h3>
+<h4 data-i18n="exp_bank_company">Arab Tunisian Bank (ATB), Kairouan</h4>
+<p data-i18n="exp_bank_desc">Aidé dans les opérations de service client, y compris l'accueil et l'orientation des clients. Soutenu les tâches de gestion de comptes et appris les procédures bancaires quotidiennes. Observé le flux de travail des départements, y compris les prêts et le service client.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -188,9 +191,10 @@
                                 <img src="images/agile.png" alt="Nom de l'entreprise">
                             </div>
                         <div class="timeline-date">Juin 2025</div>
-                        <h3>Stagiaire Développeur PowerApps</h3>
-                        <h4>Agile 4UX (Stage à distance)</h4>
-                        <p>Participé au développement d'une application de gestion de carburant pour l'entreprise « Universal » en utilisant Microsoft PowerApps. Contribué à la création d'interfaces utilisateur, à l'implémentation de la logique, et à la connexion à une base de données (Microsoft Lists). Acquis une expérience pratique dans le développement low-code et les méthodologies agiles collaboratives.</p>
+                        <!-- Expérience développeur -->
+<h3 data-i18n="exp_dev_title">Stagiaire Développeur PowerApps</h3>
+<h4 data-i18n="exp_dev_company">Agile 4UX (Stage à distance)</h4>
+<p data-i18n="exp_dev_desc">Participé au développement d'une application de gestion de carburant pour l'entreprise « Universal » en utilisant Microsoft PowerApps. Contribué à la création d'interfaces utilisateur, à l'implémentation de la logique, et à la connexion à une base de données (Microsoft Lists). Acquis une expérience pratique dans le développement low-code et les méthodologies agiles collaboratives.</p>
                     </div>
                 </div>
             </div>
@@ -200,7 +204,7 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2>Mes Projets</h2>
+                <h2 data-i18n="projects_title">Mes Projets</h2>
                 <p>Découvrez mes réalisations récentes</p>
             </div>
             <div class="projects-filter">
@@ -342,7 +346,7 @@
     <section id="certifications" class="certifications">
         <div class="container">
             <div class="section-header">
-                <h2>Certifications</h2>
+                <h2 data-i18n="cert_title">Certifications</h2>
                 <p>Mes formations et certifications</p>
             </div>
             <div class="certifications-grid">

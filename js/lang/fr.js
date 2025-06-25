@@ -31,6 +31,12 @@ window.translations = {
     // Experience Section
     "exp_title": "Expérience Professionnelle",
     "exp_subtitle": "Mon parcours professionnel",
+    "exp_bank_title": "Stagiaire Bancaire",
+    "exp_bank_company": "Arab Tunisian Bank (ATB), Kairouan",
+    "exp_bank_desc": "Aidé dans les opérations de service client, y compris l'accueil et l'orientation des clients. Soutenu les tâches de gestion de comptes et appris les procédures bancaires quotidiennes. Observé le flux de travail des départements, y compris les prêts et le service client.",
+    "exp_dev_title": "Stagiaire Développeur PowerApps",
+    "exp_dev_company": "Agile 4UX (Stage à distance)",
+    "exp_dev_desc": "Participé au développement d'une application de gestion de carburant pour l'entreprise « Universal » en utilisant Microsoft PowerApps. Contribué à la création d'interfaces utilisateur, à l'implémentation de la logique, et à la connexion à une base de données (Microsoft Lists). Acquis une expérience pratique dans le développement low-code et les méthodologies agiles collaboratives.",
     
     // Projects Section
     "projects_title": "Mes Projets",
