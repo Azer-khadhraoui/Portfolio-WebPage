@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             // Cache le bouton après avoir affiché toutes les certifications
-            showMoreButton.style.display = 'none';
+            this.style.display = 'none';
         });
     }
     
@@ -139,108 +139,107 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.cert-modal .close-btn');
     
     // Ouvrir la modal avec l'image du certificat
-    viewCertButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const certPath = this.getAttribute('data-cert');
-            certImage.src = certPath;
-            certModal.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Empêche le défilement
+    if (viewCertButtons.length > 0 && certModal && certImage && closeBtn) {
+        viewCertButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const certPath = this.getAttribute('data-cert');
+                certImage.src = certPath;
+                certModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Empêche le défilement
+            });
         });
-    });
-    
-    // Fermer la modal
-    closeBtn.addEventListener('click', function() {
-        certModal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Réactive le défilement
-    });
-    
-    // Fermer la modal si on clique en dehors de l'image
-    certModal.addEventListener('click', function(e) {
-        if (e.target === certModal) {
+        
+        // Fermer la modal
+        closeBtn.addEventListener('click', function() {
             certModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-    
-    // S'il existe un code comme ceci, vérifiez sa logique
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-        // Validation qui pourrait bloquer l'envoi
-        // ...
-    });
+            document.body.style.overflow = 'auto'; // Réactive le défilement
+        });
+        
+        // Fermer la modal si on clique en dehors de l'image
+        certModal.addEventListener('click', function(e) {
+            if (e.target === certModal) {
+                certModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
     
     // Gestion du changement de langue
-    document.addEventListener('DOMContentLoaded', function() {
-        // Langue par défaut
-        let currentLang = 'fr';
+    // Fonction pour charger les traductions
+    function loadTranslations(lang) {
+        // Supprime le script précédent s'il existe
+        const existingScript = document.getElementById('lang-script');
+        if (existingScript) {
+            existingScript.remove();
+        }
         
-        // Charger les traductions pour la langue actuelle
-        function loadTranslations(lang) {
-            // Supprimer l'ancien script de traduction s'il existe
-            const oldScript = document.getElementById('lang-script');
-            if (oldScript) {
-                oldScript.remove();
+        // Crée et ajoute un nouveau script
+        const script = document.createElement('script');
+        script.id = 'lang-script';
+        script.src = `js/lang/${lang}.js`;
+        script.onload = function() {
+            // Une fois le script chargé, les traductions sont disponibles dans window.translations
+            updatePageContent();
+        };
+        document.head.appendChild(script);
+    }
+    
+    // Fonction pour mettre à jour le contenu de la page
+    function updatePageContent() {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (window.translations && window.translations[key]) {
+                element.innerHTML = window.translations[key];
             }
-            
-            // Créer et ajouter le nouveau script
-            const script = document.createElement('script');
-            script.id = 'lang-script';
-            script.src = `js/lang/${lang}.js`;
-            script.onload = function() {
-                updatePageContent();
+        });
+    }
+    
+    // Gestionnaire pour chaque lien de langue
+    const langLinks = document.querySelectorAll('.language-dropdown a');
+    if (langLinks.length > 0) {
+        langLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
                 
-                // Mettre à jour le sélecteur de langue
-                document.querySelector('.current-lang').innerHTML = lang.toUpperCase() + ' <i class="fas fa-chevron-down"></i>';
+                const lang = this.getAttribute('data-lang');
+                if (!lang) return;
                 
-                // Mettre à jour la classe active dans le menu déroulant
-                document.querySelectorAll('.language-dropdown a').forEach(a => {
-                    a.classList.remove('active');
-                });
-                document.querySelector(`.language-dropdown a[data-lang="${lang}"]`).classList.add('active');
+                // Met à jour le bouton de sélection
+                const currentLangBtn = document.querySelector('.current-lang');
+                if (currentLangBtn) {
+                    currentLangBtn.innerHTML = lang.toUpperCase() + ' <i class="fas fa-chevron-down"></i>';
+                }
                 
-                // Définir la direction du texte pour l'arabe
+                // Active ce lien
+                langLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Applique la direction RTL pour l'arabe
                 if (lang === 'ar') {
                     document.body.setAttribute('dir', 'rtl');
-                    // Ajouter une classe pour les ajustements CSS spécifiques à RTL
                     document.body.classList.add('rtl');
                 } else {
                     document.body.setAttribute('dir', 'ltr');
                     document.body.classList.remove('rtl');
                 }
-            };
-            document.head.appendChild(script);
-        }
-        
-        // Mettre à jour le contenu de la page avec les traductions
-        function updatePageContent() {
-            // Remplacer tous les textes ayant des attributs data-i18n
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                if (translations[key]) {
-                    element.innerHTML = translations[key];
-                }
-            });
-        }
-        
-        // Événements pour les liens de langue
-        document.querySelectorAll('.language-dropdown a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const lang = this.getAttribute('data-lang');
-                if (lang !== currentLang) {
-                    currentLang = lang;
-                    localStorage.setItem('preferredLanguage', lang);
-                    loadTranslations(lang);
-                }
+                
+                // Stocke la préférence
+                localStorage.setItem('preferredLanguage', lang);
+                
+                // Charge les traductions
+                loadTranslations(lang);
+                
+                console.log('Langue changée pour:', lang); // Pour débogage
             });
         });
         
-        // Charger la langue préférée de l'utilisateur si disponible
-        const savedLang = localStorage.getItem('preferredLanguage');
-        if (savedLang) {
-            currentLang = savedLang;
+        // Charge la langue préférée ou par défaut
+        const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
+        const langLink = document.querySelector(`.language-dropdown a[data-lang="${savedLang}"]`);
+        if (langLink) {
+            langLink.click();
+        } else {
+            loadTranslations('fr');
         }
-        
-        // Charger les traductions initiales
-        loadTranslations(currentLang);
-    });
+    }
 });

@@ -23,7 +23,7 @@
             <nav>
                 <ul>
                     <li><a href="#home" class="active" data-i18n="nav_home">Accueil</a></li>
-                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#about" data-i18n="nav_about">À Propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#experience">Expérience</a></li>
                     <li><a href="#projects">Projets</a></li>
@@ -33,9 +33,9 @@
             <div class="language-selector">
                 <button class="current-lang">FR <i class="fas fa-chevron-down"></i></button>
                 <div class="language-dropdown">
-                    <a href="#" data-lang="fr" class="active">Français</a>
-                    <a href="#" data-lang="en">English</a>
-                    <a href="#" data-lang="ar">العربية</a>
+                    <a href="javascript:void(0);" data-lang="fr" class="active">Français</a>
+                    <a href="javascript:void(0);" data-lang="en">English</a>
+                    <a href="javascript:void(0);" data-lang="ar">العربية</a>
                 </div>
             </div>
             <div class="hamburger">
@@ -47,12 +47,12 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Bonjour, je suis <span>Mohamed Azer Khadhraoui</span></h1>
+                <h1 data-i18n="hero_greeting">Bonjour, je suis <span>Mohamed Azer Khadhraoui</span></h1>
                 <h2>Étudiant en Ingénierie Informatique</h2>
                 <p>Passionné par l'innovation et les nouvelles technologies, je crée des solutions robustes et modernes avec une expertise en C++, JavaScript, et PowerApps.</p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero_projects">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero_contact">Me contacter</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -98,12 +98,12 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2>Mes Compétences</h2>
-                <p>Technologies et outils que j'utilise</p>
+                <h2 data-i18n="skills_title">Mes Compétences</h2>
+                <p data-i18n="skills_subtitle">Technologies et outils que j'utilise</p>
             </div>
             <div class="skills-content">
                 <div class="skill-category">
-                    <h3>Développement Backend</h3>
+                    <h3 data-i18n="skills_backend">Développement Backend</h3>
                     <div class="skill-item">
                         <div class="skill-name"><i class="fab fa-php"></i> PHP</div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Développement Frontend</h3>
+                    <h3 data-i18n="skills_frontend">Développement Frontend</h3>
                     <div class="skill-item">
                         <div class="skill-name"><i class="fab fa-html5"></i> HTML5</div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Langages & Frameworks</h3>
+                    <h3 data-i18n="skills_languages">Langages & Frameworks</h3>
                     <div class="skill-item">
                         <div class="skill-name"><i class="fas fa-code"></i> C</div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Outils & Plateformes</h3>
+                    <h3 data-i18n="skills_tools">Outils & Plateformes</h3>
                     <div class="skill-item">
                         <div class="skill-name"><i class="fab fa-git-alt"></i> Git</div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
@@ -205,10 +205,10 @@
             </div>
             <div class="projects-filter">
                 <ul>
-                    <li data-filter="all" class="active">Tous</li>
-                    <li data-filter="web">Web</li>
-                    <li data-filter="desktop">Desktop</li>
-                    <li data-filter="game">Jeux</li>
+                    <li data-filter="all" class="active" data-i18n="projects_all">Tous</li>
+                    <li data-filter="web" data-i18n="projects_web">Web</li>
+                    <li data-filter="desktop" data-i18n="projects_desktop">Desktop</li>
+                    <li data-filter="game" data-i18n="projects_game">Jeux</li>
                 </ul>
             </div>
             <div class="projects-grid">
@@ -444,7 +444,7 @@
             
             <!-- Bouton "Voir plus" -->
             <div class="text-center" style="margin-top: 30px;">
-                <button id="show-more-certs" class="btn btn-secondary">
+                <button id="show-more-certs" class="btn btn-secondary" data-i18n="cert_more">
                     <i class="fas fa-plus-circle"></i> Voir plus de certifications
                 </button>
             </div>
@@ -454,7 +454,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
+                <p data-i18n="footer_rights">© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
                 <div class="social-links">
                     <a href="https://github.com/Azer-khadhraoui" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
@@ -467,8 +467,8 @@
                     </a>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
+                    <a href="#" data-i18n="footer_legal">Mentions légales</a>
+                    <a href="#" data-i18n="footer_privacy">Politique de confidentialité</a>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-const translations = {
+window.translations = {
     // Navigation
     "nav_home": "الرئيسية",
     "nav_about": "نبذة عني",
@@ -8,15 +8,15 @@ const translations = {
     "nav_certifications": "الشهادات",
     
     // Hero Section
-    "hero_greeting": "مرحبًا، أنا",
+    "hero_greeting": "مرحبًا، أنا <span>محمد الأزهر خضراوي</span>",
     "hero_title": "طالب هندسة كمبيوتر",
     "hero_description": "شغوف بالابتكار والتقنيات الجديدة، أقوم بإنشاء حلول قوية وحديثة مع خبرة في ++C و JavaScript و PowerApps.",
-    "hero_projects": "عرض مشاريعي",
+    "hero_projects": "مشاهدة مشاريعي",
+    "hero_contact": "اتصل بي",
     
     // About Section
     "about_title": "نبذة عني",
-    "about_subtitle": "تعرف أكثر على مساري ودوافعي",
-    "about_p1": "أنا طالب في السنة الثانية من هندسة الكمبيوتر في جامعة ESPRIT، شغوف بالابتكار والتقنيات الجديدة. لقد تفوقت في دراستي بمتوسط 17.26 في 2023-2024 وأزدهر في البيئات التعاونية. هدفي هو حل المشكلات المعقدة من خلال تطوير حلول قوية بشغف ودقة.",
+    "about_p1": "أنا طالب في السنة الثانية من هندسة الكمبيوتر في ESPRIT، شغوف بالابتكار والتقنيات الجديدة. لقد تفوقت في دراستي بمتوسط 17.26 في 2023-2024 وأزدهر في البيئات التعاونية. هدفي هو حل المشكلات المعقدة من خلال تطوير حلول قوية بشغف ودقة.",
     "about_p2": "لدي خبرة عملية في تطوير الويب والبرمجيات، مع مشاريع متنوعة تتراوح من تطبيقات إدارة كرة القدم إلى منصات تعليمية تفاعلية. تشمل مهاراتي C++ و JavaScript و HTML و CSS و PHP و PowerApps، مع التركيز بشكل كبير على إنشاء واجهات مستخدم حديثة وبديهية.",
     "about_download": "تحميل السيرة الذاتية",
     
@@ -27,6 +27,10 @@ const translations = {
     "skills_frontend": "تطوير الواجهة",
     "skills_languages": "اللغات وأطر العمل",
     "skills_tools": "الأدوات والمنصات",
+    
+    // Experience Section
+    "exp_title": "الخبرة المهنية",
+    "exp_subtitle": "مسيرتي المهنية",
     
     // Projects Section
     "projects_title": "مشاريعي",
@@ -39,10 +43,10 @@ const translations = {
     // Certifications Section
     "cert_title": "الشهادات",
     "cert_subtitle": "تدريبي وشهاداتي",
-    "cert_more": "عرض المزيد من الشهادات",
+    "cert_more": "مشاهدة المزيد من الشهادات",
     
     // Footer
     "footer_rights": "© 2025 محمد الأزهر خضراوي. جميع الحقوق محفوظة.",
-    "footer_legal": "الإشعار القانوني",
+    "footer_legal": "البنود القانونية",
     "footer_privacy": "سياسة الخصوصية"
 };
