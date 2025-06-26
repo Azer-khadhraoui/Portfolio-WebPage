@@ -6,6 +6,7 @@ window.translations = {
     "nav_experience": "Experience",
     "nav_projects": "Projects",
     "nav_certifications": "Certifications",
+    "nav_activities": "Activities",
     
     // Hero Section
     "hero_greeting": "Hello, I'm <span>Mohamed Azer Khadhraoui</span>",
@@ -50,6 +51,18 @@ window.translations = {
     "cert_title": "Certifications",
     "cert_subtitle": "My training and certifications",
     "cert_more": "See more certifications",
+    
+    // Activities Section
+    "activities_title": "Extracurricular Activities",
+    "activities_subtitle": "My engagement beyond studies",
+    "act_acm_title": "ACM ESPRIT Club – Member",
+    "act_acm_date": "October 2023 – May 2024",
+    "act_acm_p1": "Participated in coding challenges, tech talks, and collaborative learning sessions.",
+    "act_acm_p2": "Contributed to workshops on competitive programming C++ and AI.",
+    "act_sport_title": "ESPRIT Sport – Member",
+    "act_sport_date": "October 2023 – May 2024",
+    "act_sport_p1": "Engaged in regular sports activities promoting teamwork and well-being.",
+    "act_sport_p2": "Represented the institution in inter-university sports events.",
     
     // Footer
     "footer_rights": "© 2025 Mohamed Azer Khadhraoui. All rights reserved.",

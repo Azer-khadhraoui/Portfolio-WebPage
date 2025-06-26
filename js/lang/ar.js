@@ -6,6 +6,7 @@ window.translations = {
     "nav_experience": "الخبرة",
     "nav_projects": "المشاريع",
     "nav_certifications": "الشهادات",
+    "nav_activities": "الأنشطة",
     
     // Hero Section
     "hero_greeting": "مرحبًا، أنا <span>محمد آزر خضراوي</span>",
@@ -54,5 +55,17 @@ window.translations = {
     // Footer
     "footer_rights": "© 2025 محمد آزر خضراوي. جميع الحقوق محفوظة.",
     "footer_legal": "البنود القانونية",
-    "footer_privacy": "سياسة الخصوصية"
+    "footer_privacy": "سياسة الخصوصية",
+    
+    // Activities Section
+    "activities_title": "الأنشطة اللامنهجية",
+    "activities_subtitle": "التزامي خارج الدراسة",
+    "act_acm_title": "نادي ACM ESPRIT – عضو",
+    "act_acm_date": "أكتوبر 2023 – مايو 2024",
+    "act_acm_p1": "المشاركة في تحديات البرمجة والمحادثات التقنية وجلسات التعلم التعاوني.",
+    "act_acm_p2": "المساهمة في ورش عمل حول برمجة المسابقات ++C والذكاء الاصطناعي.",
+    "act_sport_title": "ESPRIT الرياضي – عضو",
+    "act_sport_date": "أكتوبر 2023 – مايو 2024",
+    "act_sport_p1": "المشاركة في الأنشطة الرياضية المنتظمة التي تعزز العمل الجماعي والرفاهية.",
+    "act_sport_p2": "تمثيل المؤسسة في الأحداث الرياضية بين الجامعات."
 };
