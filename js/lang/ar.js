@@ -56,6 +56,7 @@ window.translations = {
     "footer_rights": "© 2025 محمد آزر خضراوي. جميع الحقوق محفوظة.",
     "footer_legal": "البنود القانونية",
     "footer_privacy": "سياسة الخصوصية",
+    "footer_contact_title": "تواصل معي",
     
     // Activities Section
     "activities_title": "الأنشطة اللامنهجية",

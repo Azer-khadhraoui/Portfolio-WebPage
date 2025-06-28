@@ -67,5 +67,6 @@ window.translations = {
     // Footer
     "footer_rights": "© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.",
     "footer_legal": "Mentions légales",
-    "footer_privacy": "Politique de confidentialité"
+    "footer_privacy": "Politique de confidentialité",
+    "footer_contact_title": "Contactez-moi",
 };
