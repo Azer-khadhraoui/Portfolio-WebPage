@@ -1169,3 +1169,123 @@ body.rtl .btn i {
         grid-template-columns: 1fr;
     }
 }
+
+/* Styles pour les vidéos */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: #000;
+    margin-bottom: 15px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.video-note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.video-note i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.video-note a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.video-note a:hover {
+    text-decoration: none;
+}
+
+/* GitHub Demo Styles */
+.github-demo {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin: 20px 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.github-demo-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.github-demo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.github-demo:hover .github-demo-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.github-demo:hover .github-demo-image {
+    opacity: 0.9;
+}
+
+.demo-link {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.demo-link:hover {
+    transform: translateY(-3px);
+}
+
+.github-note {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Version responsive */
+@media (max-width: 768px) {
+    .github-demo-image {
+        max-height: 250px;
+    }
+    
+    .demo-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .github-note {
+        font-size: 12px;
+    }
+}
