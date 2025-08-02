@@ -32,6 +32,9 @@ window.translations = {
     // Experience Section
     "exp_title": "Expérience Professionnelle",
     "exp_subtitle": "Mon parcours professionnel",
+    "exp_web_dev_title": "Stagiaire Développeur Web",
+    "exp_web_dev_company": "ATB (Arab Tunisian Bank) (Siège Social, À distance)",
+    "exp_web_dev_desc": "Développé une application web full-stack de gestion de cartes utilisant React.js (frontend) et Node.js / Express.js (backend). Implémenté des composants UI dynamiques, des routes API, et connecté à une base de données fictive pour la gestion des données.",
     "exp_bank_title": "Stagiaire Bancaire",
     "exp_bank_company": "Arab Tunisian Bank (ATB), Kairouan",
     "exp_bank_desc": "Aidé dans les opérations de service client, y compris l'accueil et l'orientation des clients. Soutenu les tâches de gestion de comptes et appris les procédures bancaires quotidiennes. Observé le flux de travail des départements, y compris les prêts et le service client.",

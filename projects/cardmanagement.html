@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Management System - Mohamed Azer Khadhraoui</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-detail {
+            padding: 100px 0 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .project-detail h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .project-detail .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .project-content {
+            padding: 80px 0;
+            background: white;
+        }
+        .project-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        .project-description, .project-tech {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .project-description h3, .project-tech h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .features-section {
+            background: #f8f9fa;
+            padding: 50px 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .feature-item {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .feature-item i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            margin-top: 30px;
+        }
+        .back-btn:hover {
+            background: #5a6fd8;
+        }
+        @media (max-width: 768px) {
+            .project-info {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .project-detail h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="project-detail">
+        <div class="container">
+            <h1>Card Management System</h1>
+            <p class="subtitle">Application Web Bancaire de Gestion de Cartes - Juillet 2025</p>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="container">
+            <div class="project-info">
+                <div class="project-description">
+                    <h3><i class="fas fa-info-circle"></i> Description du Projet</h3>
+                    <p>Développé durant un stage chez ATB (Arab Tunisian Bank), ce système de gestion de cartes est une application web full-stack permettant la création, le suivi et la mise à jour de cartes bancaires.</p>
+                    <p>Le projet utilise React.js pour l'interface utilisateur moderne et intuitive, et Node.js/Express.js pour le backend robuste. L'application est conçue pour offrir une expérience utilisateur fluide dans un environnement bancaire réel.</p>
+                    <p>L'accent a été mis sur la sécurité, les performances et la livraison d'une expérience utilisateur sans faille, conformément aux standards de l'industrie bancaire.</p>
+                </div>
+                <div class="project-tech">
+                    <h3><i class="fas fa-code"></i> Technologies Utilisées</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">RESTful APIs</span>
+                        <span class="tech-tag">Mock Database</span>
+                        <span class="tech-tag">State Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fonctionnalités Principales</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Création de Cartes</h3>
+                    <p>Interface intuitive pour créer de nouvelles cartes bancaires avec validation en temps réel des données.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Suivi en Temps Réel</h3>
+                    <p>Tableau de bord dynamique pour suivre l'état et l'activité des cartes en temps réel.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-edit"></i>
+                    <h3>Mise à Jour</h3>
+                    <p>Fonctionnalités complètes de modification et de mise à jour des informations des cartes.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sécurité</h3>
+                    <p>Implémentation de mesures de sécurité robustes conformes aux standards bancaires.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-server"></i>
+                    <h3>APIs RESTful</h3>
+                    <p>Architecture backend bien structurée avec des APIs RESTful pour une communication efficace.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Gestion des Données</h3>
+                    <p>Système de gestion des données côté serveur avec connexion à une base de données fictive.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="../index.html#projects" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Retour aux Projets
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
