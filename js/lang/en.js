@@ -11,14 +11,14 @@ window.translations = {
     // Hero Section
     "hero_greeting": "Hello, I'm <span>Mohamed Azer Khadhraoui</span>",
     "hero_title": "Computer Engineering Student",
-    "hero_description": "Passionate about innovation and new technologies, I create robust and modern solutions with expertise in C++, JavaScript, and PowerApps.",
+    "hero_description": "Passionate about innovation and new technologies, I create robust and modern solutions with expertise in React.js, Node.js, TypeScript, C++, and PowerApps.",
     "hero_projects": "View my projects",
     "hero_contact": "Contact me",
     
     // About Section
     "about_title": "About Me",
     "about_p1": "I am a second-year computer engineering student at ESPRIT, passionate about innovation and new technologies. I have excelled in my studies with an average of 17.26 in 2023-2024 and I thrive in collaborative environments. My goal is to solve complex problems by developing robust solutions with passion and precision.",
-    "about_p2": "I have practical experience in web and software development, with various projects ranging from football management applications to interactive educational platforms. My skills include C++, JavaScript, HTML, CSS, PHP, and PowerApps, with a strong focus on creating modern and intuitive user interfaces.",
+    "about_p2": "I have practical experience in web and software development, with various projects ranging from football management applications to interactive educational platforms. My skills include React.js, Node.js, TypeScript, C++, JavaScript, HTML, CSS, PHP, and PowerApps, with a strong focus on creating modern and intuitive user interfaces.",
     "about_download": "Download CV",
     
     // Skills Section
