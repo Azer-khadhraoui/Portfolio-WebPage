@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Devises - Détails du projet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details {
+            padding: 100px 0;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .project-video video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            background-color: #000;
+            max-height: 500px;
+        }
+        
+        .features-list {
+            margin: 30px 0;
+        }
+        
+        .features-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .features-list li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+        }
+        
+        .demo-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .demo-link {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .demo-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mohamed Azer Khadhraoui</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>Convertisseur de Devises</h2>
+                <p>Application full-stack de conversion de devises avec interface moderne</p>
+            </div>
+            
+            <div class="project-description">
+                <p>Application full-stack de conversion de devises avec API REST, historique des taux et alertes personnalisées. Développée avec React, TypeScript, Node.js et une interface moderne glassmorphism.</p>
+                
+                <h3>Fonctionnalités principales</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-exchange-alt"></i> Conversion en temps réel entre plus de 100 devises</li>
+                    <li><i class="fas fa-chart-line"></i> Historique des taux de change avec graphiques</li>
+                    <li><i class="fas fa-bell"></i> Alertes personnalisées pour les fluctuations de devises</li>
+                    <li><i class="fas fa-mobile-alt"></i> Interface responsive et moderne avec effet glassmorphism</li>
+                    <li><i class="fas fa-cloud"></i> API REST pour l'intégration avec d'autres applications</li>
+                    <li><i class="fas fa-save"></i> Sauvegarde des conversions favorites</li>
+                    <li><i class="fas fa-sync-alt"></i> Mise à jour automatique des taux en temps réel</li>
+                </ul>
+                
+                <h3>Technologies utilisées</h3>
+                <ul class="features-list">
+                    <li><i class="fab fa-react"></i> React avec TypeScript</li>
+                    <li><i class="fab fa-node-js"></i> Node.js et Express</li>
+                    <li><i class="fas fa-server"></i> API REST avec authentification</li>
+                    <li><i class="fas fa-palette"></i> Design glassmorphism moderne</li>
+                    <li><i class="fas fa-chart-bar"></i> Charts.js pour les graphiques</li>
+                    <li><i class="fas fa-database"></i> Base de données pour l'historique</li>
+                </ul>
+                
+                <h3>Architecture</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-code-branch"></i> Architecture MVC pour le backend</li>
+                    <li><i class="fas fa-cube"></i> Composants React réutilisables</li>
+                    <li><i class="fas fa-shield-alt"></i> Validation TypeScript stricte</li>
+                    <li><i class="fas fa-rocket"></i> Optimisation des performances</li>
+                </ul>
+            </div>
+            
+            <div class="demo-section">
+                <h3>Démo en ligne</h3>
+                <a href="https://azer-khadhraoui.github.io/convertisseur-devise/" target="_blank" rel="noopener noreferrer" class="demo-link">
+                    <i class="fas fa-external-link-alt"></i> Voir la démo live
+                </a>
+                <a href="https://github.com/Azer-khadhraoui/convertisseur-devise" target="_blank" rel="noopener noreferrer" class="demo-link">
+                    <i class="fab fa-github"></i> Code source sur GitHub
+                </a>
+            </div>
+            
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="../images/currency.png" alt="Interface principale du convertisseur">
+                </div>
+            </div>
+            
+            <a href="../index.html#projects" class="btn btn-primary back-btn">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
