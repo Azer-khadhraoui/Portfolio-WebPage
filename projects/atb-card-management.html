@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATB Card Management System - Détails du projet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details {
+            padding: 100px 0;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .features-list {
+            margin: 30px 0;
+        }
+        
+        .features-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .features-list li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+        }
+        
+        .demo-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .demo-link {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .demo-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .company-context {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .company-context h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .company-context h4 i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mohamed Azer Khadhraoui</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>ATB Card Management System</h2>
+                <p>Application bancaire web de gestion de cartes</p>
+            </div>
+            
+            <div class="company-context">
+                <h4><i class="fas fa-university"></i> Contexte du stage - ATB (Arab Tunisian Bank)</h4>
+                <p>Ce projet a été développé durant mon stage au siège social d'ATB (Arab Tunisian Bank) en juillet 2025. Il s'agit d'une application web full-stack de gestion de cartes bancaires, conçue pour moderniser et digitaliser les processus de gestion des cartes au sein de la banque.</p>
+            </div>
+            
+            <div class="project-description">
+                <p>Application web full-stack développée pour ATB (Arab Tunisian Bank) permettant la gestion complète des cartes bancaires. Développée avec React.js pour le frontend et Node.js/Express.js pour le backend, cette application offre une interface moderne et intuitive pour les opérations bancaires liées aux cartes.</p>
+                
+                <h3>Fonctionnalités principales</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-user-plus"></i> Système d'inscription et d'authentification sécurisé</li>
+                    <li><i class="fas fa-sign-in-alt"></i> Connexion utilisateur avec validation</li>
+                    <li><i class="fas fa-credit-card"></i> Demande de nouvelle carte bancaire</li>
+                    <li><i class="fas fa-search"></i> Consultation des informations de carte</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Tableau de bord avec menu de navigation</li>
+                    <li><i class="fas fa-shield-alt"></i> Sécurité renforcée pour les données bancaires</li>
+                    <li><i class="fas fa-mobile-alt"></i> Interface responsive adaptée à tous les appareils</li>
+                    <li><i class="fas fa-database"></i> Gestion des données avec base de données fictive</li>
+                </ul>
+                
+                <h3>Technologies utilisées</h3>
+                <ul class="features-list">
+                    <li><i class="fab fa-react"></i> React.js pour l'interface utilisateur</li>
+                    <li><i class="fab fa-node-js"></i> Node.js et Express.js pour le backend</li>
+                    <li><i class="fas fa-server"></i> API REST pour la communication client-serveur</li>
+                    <li><i class="fas fa-database"></i> Base de données fictive pour les tests</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS3 pour le design moderne</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript ES6+</li>
+                    <li><i class="fas fa-mobile-alt"></i> Design responsive</li>
+                </ul>
+                
+                <h3>Modules de l'application</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-user-plus"></i> <strong>Inscription</strong> : Création de nouveaux comptes utilisateurs</li>
+                    <li><i class="fas fa-sign-in-alt"></i> <strong>Connexion</strong> : Authentification sécurisée</li>
+                    <li><i class="fas fa-home"></i> <strong>Menu principal</strong> : Navigation vers les différentes fonctionnalités</li>
+                    <li><i class="fas fa-plus-circle"></i> <strong>Demande de carte</strong> : Processus de demande de nouvelle carte</li>
+                    <li><i class="fas fa-eye"></i> <strong>Consultation</strong> : Visualisation des informations de carte</li>
+                </ul>
+                
+                <h3>Expérience acquise</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-code"></i> Développement full-stack avec React et Node.js</li>
+                    <li><i class="fas fa-api"></i> Création et implémentation d'APIs REST</li>
+                    <li><i class="fas fa-users"></i> Travail en environnement bancaire professionnel</li>
+                    <li><i class="fas fa-shield-alt"></i> Compréhension des enjeux de sécurité bancaire</li>
+                    <li><i class="fas fa-project-diagram"></i> Gestion de projet en méthodologie agile</li>
+                </ul>
+            </div>
+            
+            <div class="demo-section">
+                <h3>Démo et Code Source</h3>
+                <a href="https://azer-khadhraoui.github.io/systeme-cartes-atb/" target="_blank" rel="noopener noreferrer" class="demo-link">
+                    <i class="fas fa-external-link-alt"></i> Voir la démo live
+                </a>
+                <a href="https://github.com/Azer-khadhraoui/systeme-cartes-atb" target="_blank" rel="noopener noreferrer" class="demo-link">
+                    <i class="fab fa-github"></i> Code source sur GitHub
+                </a>
+            </div>
+            
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="../images/atb/signin.png" alt="Page de connexion">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/atb/sign up.png" alt="Page d'inscription">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/atb/menu.png" alt="Menu principal de l'application">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/atb/demandeCARTE.png" alt="Module de demande de carte">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/atb/consultation carte.png" alt="Module de consultation de carte">
+                </div>
+            </div>
+            
+            <a href="../index.html#projects" class="btn btn-primary back-btn">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
