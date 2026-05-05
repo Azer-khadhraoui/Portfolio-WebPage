@@ -735,8 +735,24 @@ nav ul li a.active::after {
     transition: all 0.3s ease;
 }
 
+.company-logo img.afrox-logo {
+    width: 72px;
+    height: 40px;
+}
+
 .company-logo:hover img {
     transform: scale(1.05);
+}
+
+.timeline-content .experience-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.timeline-content .experience-link:hover {
+    text-decoration: underline;
 }
 
 /* Enhanced Experience Timeline Styles */

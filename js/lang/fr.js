@@ -32,6 +32,11 @@ window.translations = {
     // Experience Section
     "exp_title": "Expérience Professionnelle",
     "exp_subtitle": "Mon parcours professionnel",
+    "exp_afrox_date": "02/2026 - Présent",
+    "exp_afrox_title": "Développeur Full Stack (Temps partiel / Freelance)",
+    "exp_afrox_company": "AFRO X Lab",
+    "exp_afrox_desc": "Développement et optimisation d'un site web avec Next.js, TypeScript et Tailwind CSS. Amélioration du SEO et des performances (Lighthouse : 100 Performance, 100 Accessibility, 96 Best Practices, 92 SEO). Déploiement et gestion de l'hébergement sur OVH.",
+    "exp_afrox_link": "Afro X Lab Website",
     "exp_web_dev_title": "Stagiaire Développeur Web",
     "exp_web_dev_company": "ATB (Arab Tunisian Bank) (Siège Social, À distance)",
     "exp_web_dev_desc": "Développé une application web full-stack de gestion de cartes utilisant React.js (frontend) et Node.js / Express.js (backend). Implémenté des composants UI dynamiques, des routes API, et connecté à une base de données fictive pour la gestion des données.",

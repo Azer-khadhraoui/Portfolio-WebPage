@@ -32,6 +32,11 @@ window.translations = {
     // Experience Section
     "exp_title": "الخبرة المهنية",
     "exp_subtitle": "مسيرتي المهنية",
+    "exp_afrox_date": "02/2026 - حتى الآن",
+    "exp_afrox_title": "مطوّر Full Stack (دوام جزئي / عمل حر)",
+    "exp_afrox_company": "AFRO X Lab",
+    "exp_afrox_desc": "تطوير وتحسين موقع ويب باستخدام Next.js و TypeScript و Tailwind CSS. تحسين السيو والأداء (Lighthouse: 100 Performance و100 Accessibility و96 Best Practices و92 SEO). النشر وإدارة الاستضافة على OVH.",
+    "exp_afrox_link": "موقع Afro X Lab",
     "exp_web_dev_title": "متدرب تطوير ويب عن بعد",
     "exp_web_dev_company": "البنك العربي التونسي (ATB) (المقر الرئيسي، عن بعد)",
     "exp_web_dev_desc": "طورت تطبيق ويب متكامل لإدارة البطاقات باستخدام React.js (الواجهة الأمامية) و Node.js / Express.js (الخلفية). نفذت مكونات واجهة مستخدم ديناميكية، ومسارات API، واتصلت بقاعدة بيانات وهمية للتعامل مع البيانات.",
