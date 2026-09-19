@@ -100,6 +100,12 @@ Portfolio personnel interactif et moderne présentant mon parcours d'étudiant e
 - Pipeline DevSecOps : GitHub Actions, CodeQL, Trivy, OWASP ZAP, Gitleaks, SonarCloud
 - Déploiement Kubernetes, infrastructure Terraform, supervision Prometheus/Grafana et 92 tests automatisés
 
+### 💻 **AFRO X Lab** - *Février 2026 - fin juin 2026*
+**💼 Développeur Full Stack** (Temps partiel / Freelance)
+- Développement et optimisation d'un site web avec Next.js, TypeScript et Tailwind CSS
+- Amélioration SEO et performances Lighthouse
+- Déploiement et gestion de l'hébergement sur OVH
+
 ### 🏦 **ATB (Arab Tunisian Bank)** - *Juillet 2025*
 **🖥️ Stagiaire Développeur Web** (Siège Social, À distance)
 - Développement d'une application web full-stack de gestion de cartes bancaires

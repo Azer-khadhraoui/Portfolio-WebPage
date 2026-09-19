@@ -32,7 +32,7 @@ window.translations = {
     // Experience Section
     "exp_title": "Expérience Professionnelle",
     "exp_subtitle": "Mon parcours professionnel",
-    "exp_afrox_date": "02/2026 - Présent",
+    "exp_afrox_date": "02/2026 - fin juin 2026",
     "exp_afrox_title": "Développeur Full Stack (Temps partiel / Freelance)",
     "exp_afrox_company": "AFRO X Lab",
     "exp_afrox_desc": "Développement et optimisation d'un site web avec Next.js, TypeScript et Tailwind CSS. Amélioration du SEO et des performances (Lighthouse : 100 Performance, 100 Accessibility, 96 Best Practices, 92 SEO). Déploiement et gestion de l'hébergement sur OVH.",

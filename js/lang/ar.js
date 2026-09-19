@@ -32,7 +32,7 @@ window.translations = {
     // Experience Section
     "exp_title": "الخبرة المهنية",
     "exp_subtitle": "مسيرتي المهنية",
-    "exp_afrox_date": "02/2026 - حتى الآن",
+    "exp_afrox_date": "02/2026 - أواخر يونيو 2026",
     "exp_afrox_title": "مطوّر Full Stack (دوام جزئي / عمل حر)",
     "exp_afrox_company": "AFRO X Lab",
     "exp_afrox_desc": "تطوير وتحسين موقع ويب باستخدام Next.js و TypeScript و Tailwind CSS. تحسين السيو والأداء (Lighthouse: 100 Performance و100 Accessibility و96 Best Practices و92 SEO). النشر وإدارة الاستضافة على OVH.",
