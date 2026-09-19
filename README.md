@@ -94,6 +94,12 @@ Portfolio personnel interactif et moderne présentant mon parcours d'étudiant e
 
 ## 💼 Expérience Professionnelle
 
+### 🏦 **Arab Tunisian Bank ATB** - *1 juillet 2026 - 31 août 2026*
+**🛡️ Stagiaire DevSecOps & Machine Learning** (Tunis, Hybride)
+- Conception d'ATB Credit Platform avec scoring de risque par IA explicable
+- Pipeline DevSecOps : GitHub Actions, CodeQL, Trivy, OWASP ZAP, Gitleaks, SonarCloud
+- Déploiement Kubernetes, infrastructure Terraform, supervision Prometheus/Grafana et 92 tests automatisés
+
 ### 🏦 **ATB (Arab Tunisian Bank)** - *Juillet 2025*
 **🖥️ Stagiaire Développeur Web** (Siège Social, À distance)
 - Développement d'une application web full-stack de gestion de cartes bancaires
