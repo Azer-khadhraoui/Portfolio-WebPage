@@ -7,7 +7,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Azer-khadhraoui/Portfolio-WebPage?style=for-the-badge)](https://github.com/Azer-khadhraoui/Portfolio-WebPage/network)
 [![GitHub issues](https://img.shields.io/github/issues/Azer-khadhraoui/Portfolio-WebPage?style=for-the-badge)](https://github.com/Azer-khadhraoui/Portfolio-WebPage/issues)
 
-**🎓 Étudiant en Ingénierie Informatique | 💻 Développeur Full-Stack | 🚀 Passionné d'Innovation**
+**🎓 Étudiant ingénieur Cloud Computing & Cybersécurité | 💻 Développeur Full Stack | 🛡️ DevSecOps**
 
 [🌐 Voir le Portfolio](https://azer-khadhraoui.github.io/Portfolio-WebPage/) • [📧 Contact](mailto:mohamedazer.khadhraoui@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/azer-khadhraoui-6b18a8332)
 
@@ -17,11 +17,11 @@
 
 ## 🎯 À Propos
 
-Portfolio personnel interactif et moderne présentant mon parcours d'étudiant en ingénierie informatique à **ESPRIT**. Ce site vitrine met en avant mes projets de développement, mes compétences techniques, mon expérience professionnelle et mes activités extrascolaires.
+Portfolio personnel interactif et moderne présentant mon parcours d'étudiant ingénieur en 4e année à **ESPRIT**, option **Cloud Computing & Cybersécurité**. Ce site vitrine met en avant mes projets de développement, mes compétences techniques, mon expérience professionnelle et mes activités extrascolaires.
 
 ### 🏆 Highlights
-- **🎓 Moyenne académique** : 17.26/20 (2023-2024)
-- **💼 3 stages** en développement web et bancaire
+- **🎓 Parcours ESPRIT** : Ingénierie informatique — Cloud Computing & Cybersécurité (17.26 / 14.57 / 14.94)
+- **💼 4 expériences** en développement web, DevSecOps, Machine Learning et bancaire
 - **🛠️ 8+ projets** développés (web, desktop, jeux)
 - **📜 9+ certifications** en programmation et technologies
 

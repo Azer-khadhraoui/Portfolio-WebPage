@@ -10,15 +10,15 @@ window.translations = {
     
     // Hero Section
     "hero_greeting": "مرحبًا، أنا <span>محمد آزر خضراوي</span>",
-    "hero_title": "طالب هندسة كمبيوتر",
-    "hero_description": "شغوف بالابتكار والتقنيات الجديدة، أقوم بإنشاء حلول قوية وحديثة مع خبرة في React.js و Node.js و TypeScript و ++C و PowerApps.",
+    "hero_title": "طالب هندسة في الحوسبة السحابية والأمن السيبراني",
+    "hero_description": "مطوّر Full Stack بخبرة في Angular و Spring Boot و React و Symfony، مع تركيز على microservices والمراقبة و Docker/Kubernetes و DevSecOps.",
     "hero_projects": "مشاهدة مشاريعي",
     "hero_contact": "اتصل بي",
     
     // About Section
     "about_title": "نبذة عني",
-    "about_p1": "أنا طالب في السنة الثانية من هندسة الكمبيوتر في ESPRIT، شغوف بالابتكار والتقنيات الجديدة. لقد تفوقت في دراستي بمتوسط 17.26 في 2023-2024 وأزدهر في البيئات التعاونية. هدفي هو حل المشكلات المعقدة من خلال تطوير حلول قوية بشغف ودقة.",
-    "about_p2": "لدي خبرة عملية في تطوير الويب والبرمجيات، مع مشاريع متنوعة تتراوح من تطبيقات إدارة كرة القدم إلى منصات تعليمية تفاعلية. تشمل مهاراتي React.js و Node.js و TypeScript و C++ و JavaScript و HTML و CSS و PHP و PowerApps، مع التركيز بشكل كبير على إنشاء واجهات مستخدم حديثة وبديهية.",
+    "about_p1": "طالب مهندس في السنة الرابعة، اختصاص الحوسبة السحابية والأمن السيبراني، ومطوّر Full Stack. لدي خبرة في Angular و Spring Boot و React و Symfony، واهتمام بمعماريات microservices والمراقبة والنشر بالحاويات (Docker/Kubernetes) ضمن نهج DevSecOps.",
+    "about_p2": "ESPRIT — المدرسة العليا الخاصة للهندسة والتكنولوجيا، 2023–حتى الآن. هندسة إعلامية — اختصاص الحوسبة السحابية والأمن السيبراني (17.26 / 14.57 / 14.94).",
     "about_download": "تحميل السيرة الذاتية",
     
     // Skills Section

@@ -10,15 +10,15 @@ window.translations = {
     
     // Hero Section
     "hero_greeting": "Hello, I'm <span>Mohamed Azer Khadhraoui</span>",
-    "hero_title": "Computer Engineering Student",
-    "hero_description": "Passionate about innovation and new technologies, I create robust and modern solutions with expertise in React.js, Node.js, TypeScript, C++, and PowerApps.",
+    "hero_title": "Cloud & Cybersecurity Engineering Student",
+    "hero_description": "Full Stack Developer experienced with Angular, Spring Boot, React, and Symfony, focused on microservices, monitoring, Docker/Kubernetes, and DevSecOps.",
     "hero_projects": "View my projects",
     "hero_contact": "Contact me",
     
     // About Section
     "about_title": "About Me",
-    "about_p1": "I am a second-year computer engineering student at ESPRIT, passionate about innovation and new technologies. I have excelled in my studies with an average of 17.26 in 2023-2024 and I thrive in collaborative environments. My goal is to solve complex problems by developing robust solutions with passion and precision.",
-    "about_p2": "I have practical experience in web and software development, with various projects ranging from football management applications to interactive educational platforms. My skills include React.js, Node.js, TypeScript, C++, JavaScript, HTML, CSS, PHP, and PowerApps, with a strong focus on creating modern and intuitive user interfaces.",
+    "about_p1": "Fourth-year engineering student specializing in Cloud Computing & Cybersecurity, and Full Stack Developer. Experienced with Angular, Spring Boot, React, and Symfony, with a strong interest in microservice architectures, monitoring, and containerized deployment (Docker/Kubernetes) within a DevSecOps approach.",
+    "about_p2": "ESPRIT — Private Higher School of Engineering and Technology, 2023–Present. Computer Engineering — Cloud Computing & Cybersecurity option (17.26 / 14.57 / 14.94).",
     "about_download": "Download CV",
     
     // Skills Section
