@@ -369,6 +369,12 @@ nav ul li a.active::after {
     justify-self: center;
 }
 
+.skill-category:nth-child(5):last-child {
+    grid-column: 1 / -1;
+    max-width: 450px;
+    justify-self: center;
+}
+
 .skill-category {
     background: #ffffff;
     border-radius: 25px;
@@ -580,6 +586,7 @@ nav ul li a.active::after {
 .skill-category:nth-child(2) { animation-delay: 0.2s; }
 .skill-category:nth-child(3) { animation-delay: 0.3s; }
 .skill-category:nth-child(4) { animation-delay: 0.4s; }
+.skill-category:nth-child(5) { animation-delay: 0.5s; }
 
 @keyframes slideInUp {
     to {
