@@ -258,7 +258,8 @@ nav ul li a.active::after {
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Assure que l'image remplit le conteneur sans déformation */
+    object-fit: cover;
+    object-position: center 15%;   /* Assure que l'image remplit le conteneur sans déformation */
 }
 
 /* About Section */
