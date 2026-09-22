@@ -27,6 +27,7 @@ window.translations = {
     "skills_backend": "Backend Development",
     "skills_frontend": "Frontend Development",
     "skills_security": "Security & DevSecOps",
+    "skills_cloud": "Cloud & Monitoring",
     "skills_languages": "Languages & Frameworks",
     "skills_tools": "Tools & Platforms",
     
