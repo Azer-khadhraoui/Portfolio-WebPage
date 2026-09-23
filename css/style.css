@@ -1734,6 +1734,12 @@ body.rtl .btn i {
     overflow: hidden;
 }
 
+.featured-activity {
+    grid-column: 1 / -1;
+    width: min(100%, 900px);
+    justify-self: center;
+}
+
 .activity-item::before {
     content: '';
     position: absolute;
