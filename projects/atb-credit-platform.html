@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATB Credit Platform - Détails du projet</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details { padding: 100px 0; }
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .gallery-item { border-radius: 10px; overflow: hidden; box-shadow: var(--box-shadow); }
+        .gallery-item img { display: block; width: 100%; height: auto; transition: transform 0.3s ease; }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .features-list { margin: 30px 0; }
+        .features-list li { margin-bottom: 10px; display: flex; align-items: center; }
+        .features-list li i { margin-right: 10px; color: var(--primary-color); }
+        .back-btn { display: inline-block; margin-top: 30px; }
+        .demo-section { margin: 40px 0; text-align: center; }
+        .demo-link {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .company-context {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        .company-context h4 { color: var(--primary-color); margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>Mohamed Azer Khadhraoui</h1></div>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>ATB Credit Platform</h2>
+                <p>Plateforme full-stack de gestion et d'évaluation des dossiers de crédit</p>
+            </div>
+
+            <div class="company-context">
+                <h4><i class="fas fa-university"></i> Contexte du stage - ATB (Arab Tunisian Bank)</h4>
+                <p>Cette plateforme a été conçue pour faciliter la gestion des dossiers de crédit et aider à l'évaluation du risque grâce à un modèle de machine learning explicable.</p>
+            </div>
+
+            <div class="project-description">
+                <p>ATB Credit Platform est une plateforme bancaire composée de microservices. Elle permet de centraliser les demandes de crédit, d'analyser le risque de chaque dossier et d'expliquer le score obtenu facteur par facteur.</p>
+
+                <h3>Fonctionnalités principales</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-file-invoice"></i> Gestion et suivi des dossiers de crédit</li>
+                    <li><i class="fas fa-brain"></i> Scoring du risque par modèle de machine learning</li>
+                    <li><i class="fas fa-chart-bar"></i> Explication du score facteur par facteur</li>
+                    <li><i class="fas fa-users-cog"></i> Gestion des rôles et des accès</li>
+                    <li><i class="fas fa-shield-alt"></i> Chaîne DevSecOps avec contrôles de sécurité automatisés</li>
+                    <li><i class="fas fa-cloud"></i> Déploiement conteneurisé sur Kubernetes</li>
+                </ul>
+
+                <h3>Technologies utilisées</h3>
+                <ul class="features-list">
+                    <li><i class="fab fa-angular"></i> Angular pour l'interface utilisateur</li>
+                    <li><i class="fab fa-java"></i> Spring Boot pour les services backend</li>
+                    <li><i class="fab fa-python"></i> FastAPI pour le service de scoring ML</li>
+                    <li><i class="fas fa-database"></i> MongoDB pour la persistance des données</li>
+                    <li><i class="fas fa-dharmachakra"></i> Docker et Kubernetes pour le déploiement</li>
+                    <li><i class="fas fa-lock"></i> SAST, SCA, DAST et secret scanning dans le pipeline</li>
+                </ul>
+            </div>
+
+            <div class="demo-section">
+                <h3>Code Source</h3>
+                <a href="https://github.com/Azer-khadhraoui/ATB-Credit-Platform" target="_blank" rel="noopener noreferrer" class="demo-link">
+                    <i class="fab fa-github"></i> Voir le projet sur GitHub
+                </a>
+            </div>
+
+            <div class="project-gallery">
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-26 224452.png" alt="Tableau de bord ATB Credit Platform"></div>
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-26 224511.png" alt="Interface ATB Credit Platform"></div>
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-26 224533.png" alt="Gestion des crédits ATB"></div>
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-26 224552.png" alt="Dossier de crédit ATB"></div>
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-26 225209.png" alt="Analyse du risque de crédit"></div>
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-26 225224.png" alt="Score de risque explicable"></div>
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-26 225254.png" alt="Résultats de l'analyse ATB"></div>
+                <div class="gallery-item"><img src="../images/atbdevsecops/Capture d'écran 2026-07-28 135502.png" alt="Pipeline DevSecOps ATB"></div>
+            </div>
+
+            <a href="../index.html#projects" class="btn btn-primary back-btn"><i class="fas fa-arrow-left"></i> Retour aux projets</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"><div class="footer-content"><p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p></div></div>
+    </footer>
+</body>
+</html>
