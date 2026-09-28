@@ -11,7 +11,7 @@ window.translations = {
     // Hero Section
     "hero_greeting": "مرحبًا، أنا <span>محمد آزر خضراوي</span>",
     "hero_title": "طالب هندسة في الحوسبة السحابية والأمن السيبراني",
-    "hero_description": "مطوّر Full Stack بخبرة في Angular و Spring Boot و React و Symfony، مع تركيز على microservices والمراقبة و Docker/Kubernetes و DevSecOps.",
+    "hero_description": "مطوّر Full Stack بخبرة في العمل الحر والعمل بدوام جزئي، ومتخصص في Angular و Spring Boot و React و Symfony، مع تركيز على microservices والمراقبة و Docker/Kubernetes و DevSecOps. مصنّف ضمن أفضل 8% عالميًا على TryHackMe.",
     "hero_projects": "مشاهدة مشاريعي",
     "hero_contact": "اتصل بي",
     

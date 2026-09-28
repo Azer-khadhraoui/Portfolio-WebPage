@@ -11,7 +11,7 @@ window.translations = {
     // Hero Section
     "hero_greeting": "Bonjour, je suis <span>Mohamed Azer Khadhraoui</span>",
     "hero_title": "Étudiant ingénieur Cloud & Cybersécurité",
-    "hero_description": "Développeur Full Stack avec une expérience en Angular, Spring Boot, React et Symfony, orienté microservices, supervision, Docker/Kubernetes et DevSecOps.",
+    "hero_description": "Développeur Full Stack avec des expériences en freelance et à temps partiel, spécialisé en Angular, Spring Boot, React et Symfony, orienté microservices, supervision, Docker/Kubernetes et DevSecOps. Classé dans le top 8 % mondial sur TryHackMe.",
     "hero_projects": "Voir mes projets",
     "hero_contact": "Me contacter",
     
