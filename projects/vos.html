@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOS - Plateforme RH intégrée</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details { padding: 100px 0; }
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .gallery-item { border-radius: 10px; overflow: hidden; box-shadow: var(--box-shadow); }
+        .gallery-item img { display: block; width: 100%; height: auto; transition: transform 0.3s ease; }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .features-list { margin: 30px 0; }
+        .features-list li { margin-bottom: 10px; display: flex; align-items: center; }
+        .features-list li i { margin-right: 10px; color: var(--primary-color); }
+        .back-btn { display: inline-block; margin-top: 30px; }
+        .demo-section { margin: 40px 0; text-align: center; }
+        .demo-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>Mohamed Azer Khadhraoui</h1></div>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>VOS - Plateforme RH intégrée</h2>
+                <p>Gestion du recrutement, des candidatures et des employés en Web et Desktop</p>
+            </div>
+
+            <div class="project-description">
+                <p>VOS est un projet intégré proposant deux applications complémentaires pour centraliser les processus de ressources humaines : une application Web pour la gestion des utilisateurs, des offres et des candidatures, et une application Desktop dédiée au recrutement, aux entretiens, à l'évaluation et au suivi des employés.</p>
+
+                <h3>Fonctionnalités principales</h3>
+                <ul class="features-list">
+                    <li><i class="fas fa-user-cog"></i> Gestion des utilisateurs et des rôles</li>
+                    <li><i class="fas fa-briefcase"></i> Création et gestion des offres d'emploi</li>
+                    <li><i class="fas fa-file-signature"></i> Suivi des candidatures et du processus de recrutement</li>
+                    <li><i class="fas fa-comments"></i> Gestion et évaluation des entretiens</li>
+                    <li><i class="fas fa-users"></i> Suivi des employés et des ressources humaines</li>
+                    <li><i class="fas fa-smile"></i> Reconnaissance faciale et fonctionnalités d'IA générative</li>
+                </ul>
+
+                <h3>Technologies utilisées</h3>
+                <ul class="features-list">
+                    <li><i class="fab fa-symfony"></i> Symfony pour l'application Web</li>
+                    <li><i class="fab fa-java"></i> JavaFX pour l'application Desktop</li>
+                    <li><i class="fas fa-robot"></i> IA générative pour enrichir les processus RH</li>
+                    <li><i class="fas fa-user-check"></i> Reconnaissance faciale</li>
+                    <li><i class="fas fa-database"></i> Architecture intégrée pour les données et les processus RH</li>
+                </ul>
+            </div>
+
+            <div class="demo-section">
+                <h3>Code source</h3>
+                <a href="https://github.com/Azer-khadhraoui/Esprit-PIDEV-3A17--2026-VOS-web" target="_blank" rel="noopener noreferrer" class="demo-link">
+                    <i class="fab fa-github"></i> VOS Web - Symfony
+                </a>
+                <a href="https://github.com/Azer-khadhraoui/ESPRIT-PIDEV-3A17-2026-VOS-Desktop" target="_blank" rel="noopener noreferrer" class="demo-link">
+                    <i class="fab fa-github"></i> VOS Desktop - JavaFX
+                </a>
+            </div>
+
+            <div class="project-gallery">
+                <div class="gallery-item"><img src="../images/vos/accueil.png" alt="Accueil de la plateforme VOS Web"></div>
+                <div class="gallery-item"><img src="../images/vos/Capture d'écran 2026-07-21 145825.png" alt="Interface de gestion VOS"></div>
+                <div class="gallery-item"><img src="../images/vos/Capture d'écran 2026-07-21 145843.png" alt="Module de recrutement VOS"></div>
+                <div class="gallery-item"><img src="../images/vos/Capture d'écran 2026-07-21 145920.png" alt="Interface de suivi VOS"></div>
+            </div>
+
+            <a href="../index.html#projects" class="btn btn-primary back-btn"><i class="fas fa-arrow-left"></i> Retour aux projets</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"><div class="footer-content"><p>© 2025 Mohamed Azer Khadhraoui. Tous droits réservés.</p></div></div>
+    </footer>
+</body>
+</html>
