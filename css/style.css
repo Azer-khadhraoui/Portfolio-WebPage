@@ -972,6 +972,19 @@ nav ul li a.active::after {
     overflow: hidden;
     box-shadow: var(--box-shadow);
     background-color: #fff;
+    order: 4;
+}
+
+.projects-grid .project-atb {
+    order: 1;
+}
+
+.projects-grid .project-afro {
+    order: 2;
+}
+
+.projects-grid .project-vos {
+    order: 3;
 }
 
 .project-image {
