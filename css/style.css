@@ -972,7 +972,7 @@ nav ul li a.active::after {
     overflow: hidden;
     box-shadow: var(--box-shadow);
     background-color: #fff;
-    order: 4;
+    order: 8;
 }
 
 .projects-grid .project-atb {
@@ -985,6 +985,22 @@ nav ul li a.active::after {
 
 .projects-grid .project-vos {
     order: 3;
+}
+
+.projects-grid .project-aldawry {
+    order: 4;
+}
+
+.projects-grid .project-atb-card {
+    order: 5;
+}
+
+.projects-grid .project-visit {
+    order: 6;
+}
+
+.projects-grid .project-green {
+    order: 7;
 }
 
 .project-image {
