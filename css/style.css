@@ -988,19 +988,23 @@ nav ul li a.active::after {
 }
 
 .projects-grid .project-aldawry {
-    order: 4;
-}
-
-.projects-grid .project-atb-card {
     order: 5;
 }
 
-.projects-grid .project-visit {
+.projects-grid .project-atb-card {
     order: 6;
 }
 
-.projects-grid .project-green {
+.projects-grid .project-visit {
     order: 7;
+}
+
+.projects-grid .project-green {
+    order: 8;
+}
+
+.projects-grid .project-pi-reseau {
+    order: 4;
 }
 
 .project-image {
