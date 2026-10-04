@@ -1189,6 +1189,22 @@ nav ul li a.active::after {
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
+.cert-profile-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cert-profile-link:hover {
+    text-decoration: underline;
+}
+
 /* Modal pour les certificats */
 .cert-modal {
     display: none;
